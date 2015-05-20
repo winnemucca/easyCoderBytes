@@ -57,5 +57,40 @@ function longestWord(string) {
     });
     return word;
 }
-console.log(longestWord("pride and prejudice"));
+console.log('#4',longestWord("pride and prejudice"));
 
+
+
+function firstFactorial(sum) {
+  if(sum ==0) {
+    return 1;
+  }
+  if(sum < 0) {
+    return undefined;
+  }
+  return sum *firstFactorial(sum - 1);
+}
+console.log('#5',firstFactorial(4))
+
+
+function FirstFactorial(num) { 
+  var nNum=1;
+  for (var i=1;i<=num;i++) {
+    nNum*=i;
+  }
+  return nNum
+}
+console.log(FirstFactorial(4))
+
+
+function TimeConvert(num) { 
+
+  // code goes here
+  var hours = parseInt(num/60);
+  var minutes = num%60;
+  var time = hours + ':'+minutes;
+  return time.toString(); 
+         
+}
+
+console.log(TimeConvert(230));
